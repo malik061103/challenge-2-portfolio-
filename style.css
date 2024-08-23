@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: aqua;
+}
+header{
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: hsl(200, 49%, 33%);
+    color: #ffffff;
+}
+
+
+main {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("asset/sunset.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+article{
+  float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  img{
+    width: 300px;
+    border: 15px solid;
+    margin: 20px;
+    opacity: 0.5;
+  }
+
+  img:hover{
+    opacity: 1.0;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+article about-me{
+  font-size: 50px;
+}
